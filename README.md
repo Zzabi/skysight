@@ -1,7 +1,9 @@
-#Classification and forecasting of weather report
+# Classification and Forecasting of Weather Data
 
-Used different classification algorithms for classifying weather data based on four parameters which are precipiptation,max temp,min temp and wind speed. The models are trained on seattle weather dataset
+## Classification:
+Used different classification algorithms to classify weather data based on four parameters: precipitation, max temperature, min temperature, and wind speed. The models were trained on the Seattle weather dataset.
 
-Forecasting we have used Neural Prophet for forecasting. The model has been trained on data from 1950 collected from HAL in Bengaluru 
+## Forecasting: 
+Used Neural Prophet for forecasting weather data. The model was trained on data collected from HAL in Bengaluru in 1950.
 
-all datasets and models can be found in the repective repositories
+All datasets and models can be found in the respective repositories.
