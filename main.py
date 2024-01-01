@@ -36,7 +36,7 @@ with tab1:
 
     def main():
         global model
-        model = pickle.load(open('classification\model.pkl','rb'))
+        model = pickle.load(open(r'classification/model.pkl','rb'))
 
         st.title("Weather Classification")
 
@@ -69,9 +69,9 @@ with tab2:
         total = start-last_date
         total = total.days
 
-        data = pd.read_csv("forecasting/processed.csv")
+        data = pd.read_csv(r"forecasting/processed.csv")
         data["ds"] = pd.to_datetime(data["ds"])
-        m = pickle.load(open('forecasting/saved_model.pkl', "rb"))
+        m = pickle.load(open(r'forecasting/saved_model.pkl', "rb"))
 
         future = m.make_future_dataframe(data, periods=total+7)
         m.restore_trainer()
